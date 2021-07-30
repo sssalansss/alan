@@ -48,8 +48,8 @@ def aml():
     
         result = json.loads(response.read())
         htmlstr=htmlstr+"依據您輸入的參數，經過數據分析模型比對，罹患糖尿病的結果為"
-        htmlstr=result['Results']['WebServiceOutput0'][0]
-        print(result)
+        htmlstr=htmlstr+result['Results']['WebServiceOutput0'][0]['Scored Probabilities']
+        # print(result)
     
     except urllib.error.HTTPError as error:
         print("The request failed with status code: " + str(error.code))
