@@ -17,14 +17,14 @@ def aml():
             "WebServiceInput0":
             [
                 {
-                    'Pregnancies': "6",
-                    'Glucose': "148",
-                    'BloodPressure': "72",
-                    'SkinThickness': "35",
-                    'Insulin': "0",
-                    'BMI': "33.6",
-                    'DiabetesPedigreeFunction': "0.627",
-                    'Age': "50",
+                    'Pregnancies': request.values['p1'],
+                    'Glucose': "request.values['p2'],
+                    'BloodPressure': request.values['p3'],
+                    'SkinThickness': request.values['p4'],
+                    'Insulin': request.values['p5'],
+                    'BMI': request.values['p6'],
+                    'DiabetesPedigreeFunction': request.values['p7'],
+                    'Age': request.values['p8'],
                     'Outcome': "1",
                 },
             ],
