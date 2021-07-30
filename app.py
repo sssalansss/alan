@@ -1,6 +1,4 @@
-from flask import Flask
-from flask import render_template
-import requert
+from flask import Flask,requert,render_template
 import urllib
 import json
 
