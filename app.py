@@ -17,7 +17,7 @@ def aml():
             [
                 {
                     'Pregnancies': request.values['p1'],
-                    'Glucose': "request.values['p2'],
+                    'Glucose': request.values['p2'],
                     'BloodPressure': request.values['p3'],
                     'SkinThickness': request.values['p4'],
                     'Insulin': request.values['p5'],
